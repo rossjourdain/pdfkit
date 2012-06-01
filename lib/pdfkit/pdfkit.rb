@@ -33,6 +33,7 @@ class PDFKit
     args = [executable]
     args += @options.to_a.flatten.compact
     args << '--quiet'
+    args << '--version'
 
     if @source.html?
       args << '-' # Get HTML from stdin
